@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: ticket-order
+  profiles:
+    active: local
+server:
+  port: 20001
+  servlet:
+    context-path: /ticket-order

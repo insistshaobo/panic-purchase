@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.cescloud.saas.archive.service.modular.common.transaction.TransactionConfiguration

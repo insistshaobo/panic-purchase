@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: ticket-gooods
+  profiles:
+    active: local
+server:
+  port: 20000
+  servlet:
+    context-path: /ticket-gooods
+
