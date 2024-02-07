@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: panic-message
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_SERVER_ADDR:127.0.0.1:8848}
+        namespace: ${NACOS_NAMESPACE}
+      config:
+        #nacos配置中心地址
+        server-addr: ${NACOS_SERVER_ADDR:127.0.0.1:8848}
+        namespace: ${NACOS_NAMESPACE}
+        refreshEnabled: true
+        file-extension: yaml
+        encode: utf-8
+        group: ${spring.application.name}
+
+  profiles:
+    active: local

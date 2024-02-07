@@ -5,9 +5,10 @@
     <packaging>pom</packaging>
     <modules>
         <module>common</module>
-        <module>ticket-goods</module>
-        <module>ticket-order</module>
-        <module>ticket-pay</module>
+        <module>panic-goods</module>
+        <module>panic-order</module>
+        <module>panic-pay</module>
+        <module>panic-message</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -15,11 +16,11 @@
         <version>2.7.11</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.ticket</groupId>
-    <artifactId>ticket</artifactId>
+    <groupId>com.panic</groupId>
+    <artifactId>panic_purchase</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ticket</name>
-    <description>ticket</description>
+    <name>panic_purchase</name>
+    <description>panic_purchase</description>
     <properties>
         <java.version>8</java.version>
         <spring-cloud.version>2020.0.0</spring-cloud.version>

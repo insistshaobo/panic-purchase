@@ -1,11 +1,14 @@
 package utils;
 
-import org.apache.commons.lang.StringUtils;
+
+import org.apache.commons.lang3.StringUtils;
 import org.apache.http.util.TextUtils;
+import org.codehaus.groovy.util.StringUtil;
 import org.joda.time.DateTime;
 import org.joda.time.LocalDate;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
+
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -13,13 +16,7 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.ZoneId;
 import java.time.temporal.ChronoUnit;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
-import java.util.List;
-import java.util.Locale;
-import java.util.TimeZone;
+import java.util.*;
 
 /**
  * 日期处理
@@ -748,8 +745,7 @@ public class DateUtils {
 
     /**
      * 获取今天开始的日期
-     *
-     * @param date
+     * @param
      * @return
      */
     public static Date getStartOfDay() {
@@ -787,7 +783,7 @@ public class DateUtils {
     /**
      * 获取今天结束的日期
      *
-     * @param date
+     * @param
      * @return
      */
     public static Date getEndOfDay() {

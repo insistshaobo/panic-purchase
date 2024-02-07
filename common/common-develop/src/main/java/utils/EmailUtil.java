@@ -1,8 +1,9 @@
 package utils;
 
-import com.yuanyaotech.common.constant.NumberConstant;
-import com.yuanyaotech.common.enums.EnvEnum;
-import org.apache.commons.lang.StringUtils;
+
+import constant.NumberConstant;
+import enums.EnvEnum;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

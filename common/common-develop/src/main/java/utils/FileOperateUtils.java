@@ -1,6 +1,6 @@
 package utils;
 
-import com.yuanyaotech.common.exception.RRException;
+import exception.ServiceException;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.File;
@@ -44,11 +44,11 @@ public class FileOperateUtils {
             try {
                 if(!file.createNewFile()){
                     log.error("创建文件失败");
-                    throw new RRException("创建文件失败");
+                    throw new ServiceException("创建文件失败");
                 }
             } catch (IOException e) {
                 log.error("创建文件失败:{}",e);
-                throw new RRException("创建文件失败");
+                throw new ServiceException("创建文件失败");
             }
         }
 
@@ -71,11 +71,11 @@ public class FileOperateUtils {
             try {
                 if(!file.createNewFile()){
                     log.error("创建文件失败");
-                    throw new RRException("创建文件失败");
+                    throw new ServiceException("创建文件失败");
                 }
             } catch (IOException e) {
                 log.error("创建文件失败:{}",e);
-                throw new RRException("创建文件失败");
+                throw new ServiceException("创建文件失败");
             }
         }
         return file;

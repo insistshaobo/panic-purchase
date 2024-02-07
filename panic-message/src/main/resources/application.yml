@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: panic-message
+  profiles:
+    active: local
+server:
+  port: 20003
+  servlet:
+    context-path: /panic-message

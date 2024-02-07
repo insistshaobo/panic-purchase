@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: panic-goods
+  profiles:
+    active: local
+server:
+  port: 20000
+  servlet:
+    context-path: /panic-goods
+

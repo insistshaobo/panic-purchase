@@ -1,5 +1,6 @@
 package utils;
-import com.alibaba.druid.support.json.JSONUtils;
+
+import com.alibaba.fastjson2.JSON;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -72,7 +73,7 @@ public class HttpClientUtil {
 	}
 
 	public static String doPost(String url, Map<String, String> param) {
-        logger.info("doPost, url:{}, param:{}",url, JSONUtils.toJSONString(param));
+        logger.info("doPost, url:{}, param:{}",url, JSON.toJSONString(param));
 		// 创建Httpclient对象
 		CloseableHttpClient httpClient = HttpClients.createDefault();
 		CloseableHttpResponse response = null;

@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>common</artifactId>
-        <groupId>com.ticket</groupId>
+        <groupId>com.panic</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -23,18 +23,18 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.ticket</groupId>
-                <artifactId>ticket-goods</artifactId>
+                <groupId>com.panic</groupId>
+                <artifactId>panic-goods</artifactId>
                 <version>${goods.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.ticket</groupId>
-                <artifactId>ticket-order</artifactId>
+                <groupId>com.panic</groupId>
+                <artifactId>panic-order</artifactId>
                 <version>${order.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.ticket</groupId>
-                <artifactId>ticket-pay</artifactId>
+                <groupId>com.panic</groupId>
+                <artifactId>panic-pay</artifactId>
                 <version>${pay.version}</version>
             </dependency>
         </dependencies>

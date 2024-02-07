@@ -1,9 +1,0 @@
-spring:
-  application:
-    name: ticket-message
-  profiles:
-    active: local
-server:
-  port: 20003
-  servlet:
-    context-path: /ticket-message
