@@ -9,6 +9,7 @@
         <module>panic-order</module>
         <module>panic-pay</module>
         <module>panic-message</module>
+        <module>panic-user</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

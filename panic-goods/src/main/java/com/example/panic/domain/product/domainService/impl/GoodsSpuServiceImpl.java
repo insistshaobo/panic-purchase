@@ -1,8 +1,8 @@
 package com.example.panic.domain.product.domainService.impl;
 
 
-import com.example.panic.domain.product.repository.dao.GoodsSpuDao;
 import com.example.panic.domain.product.domainService.GoodsSpuService;
+import com.example.panic.domain.product.repository.dao.GoodsSpuDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

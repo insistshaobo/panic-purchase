@@ -3,8 +3,8 @@ package com.example.panic.domain.product.domainService.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.example.panic.domain.product.repository.dao.GoodsSkuDao;
-
 import com.example.panic.domain.product.repository.entity.GoodsSkuEntity;
+
 import com.example.panic.domain.product.domainService.GoodsSkuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,7 +20,7 @@ import java.util.List;
  * @version V0.1
  */
 @Service
-public class GoodsSkuServiceImpl extends ServiceImpl<GoodsSkuDao,GoodsSkuEntity> implements GoodsSkuService {
+public class GoodsSkuServiceImpl extends ServiceImpl<GoodsSkuDao, GoodsSkuEntity> implements GoodsSkuService {
 	@Autowired
 	private GoodsSkuDao goodsSkuDao;
 
