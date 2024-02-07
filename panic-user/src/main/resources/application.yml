@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: panic-user
+  profiles:
+    active: local
+server:
+  port: 20000
+  servlet:
+    context-path: /panic-user
+
