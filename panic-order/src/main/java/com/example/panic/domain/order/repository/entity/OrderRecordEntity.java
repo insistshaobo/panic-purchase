@@ -31,7 +31,7 @@ public class OrderRecordEntity implements Serializable {
 	/**
 	 * 用户id
 	 */
-	private String userId;
+	private Long userId;
 	/**
 	 * spu主键id
 	 */

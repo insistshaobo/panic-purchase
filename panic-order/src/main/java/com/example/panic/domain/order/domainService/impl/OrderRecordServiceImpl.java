@@ -1,5 +1,6 @@
 package com.example.panic.domain.order.domainService.impl;
 
+import com.example.panic.application.dto.CreateOrderDTO;
 import com.example.panic.domain.order.domainService.OrderRecordService;
 import com.example.panic.domain.order.repository.dao.OrderRecordDao;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +20,8 @@ public class OrderRecordServiceImpl implements OrderRecordService {
 	private OrderRecordDao orderRecordDao;
 
 	@Override
-	public String createOrder() {
+	public String createOrder(CreateOrderDTO createOrderDTO) {
+
 		return null;
 	}
 }

@@ -1,6 +1,8 @@
 package com.example.panic.domain.order.domainService;
 
 
+import com.example.panic.application.dto.CreateOrderDTO;
+
 /**
  * 订单记录表
  *
@@ -11,7 +13,11 @@ package com.example.panic.domain.order.domainService;
  */
 public interface OrderRecordService {
 
-
-    String createOrder();
+    /**
+     * 用户下单
+     * @param createOrderDTO
+     * @return
+     */
+    String createOrder(CreateOrderDTO createOrderDTO);
 }
 

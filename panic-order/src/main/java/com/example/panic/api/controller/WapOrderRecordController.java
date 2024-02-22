@@ -1,9 +1,11 @@
 package com.example.panic.api.controller;
 
+import com.example.panic.application.dto.CreateOrderDTO;
 import com.example.panic.domain.order.domainService.OrderRecordService;
 import constant.CommonResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -27,8 +29,8 @@ public class WapOrderRecordController {
      * @return
      */
     @PostMapping("/createOrder")
-    public CommonResult createOrder(){
-        return CommonResult.success(orderRecordService.createOrder());
+    public CommonResult createOrder(@RequestBody CreateOrderDTO createOrderDTO){
+        return CommonResult.success(orderRecordService.createOrder(createOrderDTO));
     }
 
 }
